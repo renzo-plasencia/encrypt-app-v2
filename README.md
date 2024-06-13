@@ -45,3 +45,5 @@ pip install flask
 ```
 
 ## Example
+![](https://github.com/renzo-plasencia/encrypt-app-v2/assets/148007927/b11ce182-639b-45e6-a2a9-c36faebb9d53)
+![](https://github.com/renzo-plasencia/encrypt-app-v2/assets/148007927/02b45eaa-56f4-41db-a4f9-bcf45e058e23)
