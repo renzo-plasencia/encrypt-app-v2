@@ -1,0 +1,221 @@
+body {
+    font-family: 'Montserrat';
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: start;
+    padding: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1500px;
+    width: 50%;
+    font-size: 1em;
+    margin: 20px;
+    transform: scale(1.3);
+    flex-flow: row wrap;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 30px;  
+    justify-content: start;
+    align-items: center;
+    flex: 1;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+textarea, input {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+}
+
+
+
+.buttons, .actionBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+
+
+button:hover {
+    background-color: #f0ad4e;
+}
+
+#copyTextBtn, #copyKeyBtn{
+    display: flex;
+    fill: white;
+    width: 10%;
+    padding: 10px;
+}
+
+.decryptBtn, .encryptBtn {
+    width: 25%;
+    padding: 10px;
+}
+
+button {
+    /* width: 100%; */
+    /* padding: 10px 20px; */
+    /* margin: 10px 1%; */
+    color: white;
+    background-color: #E3A800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+
+}
+
+.textarea-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Puros inputs y outputs */
+#encryptInput {
+    height: 100px;
+    position: relative;
+    resize: initial;
+}
+
+#wordCount{
+    position: absolute;
+    font-size: 0.7em;
+    font-family: 'Montserrat';
+    color: gray;
+    bottom: 20px;
+    right: 10px;
+    left: auto;
+    padding: 5px;
+}
+
+#decryptInput, #encryptOutput, #decryptOutput {
+    height: 100px;
+    margin: 20px 20px;
+} 
+
+/* Tamaño de las llaves */
+#generateKeyInput, #manualKeyInput, #decryptKey {
+    height: 30px;
+}
+
+/* Tamaño de cada una */
+#encryptInput, #decryptInput, #encryptOutput, #decryptOutput, #generateKeyInput, #manualKeyInput, #decryptKey {
+    width: 99%;
+}
+
+
+#generateKeyBtn, #manualKeyBtn {
+    width: 50%;
+    padding: 10px;
+} 
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* margin-top: -40px; */
+    margin-bottom: 40px;
+    width: 1200px;
+}
+
+#social-id{
+    width: 25px;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 500px) {
+    body {
+        height: 90vh;
+        justify-content: center;
+        align-items: start;
+        margin: 0px;
+    }
+
+    .container {
+        transform: none; /* Eliminar transform para pantallas pequeñas */
+        padding: 0px 0px; /* Reducir padding */
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        width: 400px;
+        margin: 0px;
+        margin-right: 10px;
+        margin-left: 10px;
+        
+    }
+    
+    .section {
+        padding-bottom: 0px;
+        margin-bottom: -30px;
+    }
+
+    h2 {
+        font-size: 1.2em; /* Reducir tamaño de fuente */
+    }
+
+    textarea, input {
+        font-size: 0.8em; /* Reducir tamaño de fuente */
+    }
+
+    .buttons {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    }
+
+    .actionBtn {
+        flex-direction: row;
+    }
+
+
+    button {
+        width: 100%; /* Asegurar que los botones ocupen todo el ancho */
+        margin: 5px 0; /* Margen entre botones */
+    }
+
+    #copyTextBtn, #copyKeyBtn {
+        width: auto; /* Ajustar ancho automáticamente */
+        padding: 10px;
+    }
+
+
+    #socialMedia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 372px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+}
